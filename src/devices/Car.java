@@ -1,3 +1,5 @@
+package devices;
+
 public class Car {
     private String model;
     private String producer;
@@ -18,10 +20,11 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "devices.Car{" +
                 "model='" + model + '\'' +
                 ", producer='" + producer + '\'' +
                 ", colour='" + colour + '\'' +
+                ", value=" + value +
                 '}';
     }
 }

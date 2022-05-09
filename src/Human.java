@@ -1,3 +1,5 @@
+import devices.Car;
+
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 
@@ -57,14 +59,16 @@ public class Human {
             }
         }
 
-
-        @Override
-        public String toString () {
-            return "Human{" +
-                    "pet=" + pet +
-                    ", firstName='" + firstName + '\'' +
-                    ", lastName='" + lastName + '\'' +
-                    ", car=" + car +
-                    '}';
-        }
+    @Override
+    public String toString() {
+        return "Human{" +
+                "pet=" + pet +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", car=" + car +
+                ", salary=" + salary +
+                ", lastCheck=" + lastCheck +
+                ", previousSalaryValue=" + previousSalaryValue +
+                '}';
     }
+}
