@@ -1,8 +1,11 @@
+import creatures.Animal;
+import creatures.Human;
+import creatures.Pet;
 import devices.Car;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        Animal dog = new Animal("canis");
+        Pet dog = new Pet("canis");
         dog.feed();
         dog.takeForAWalk();
         dog.feed();

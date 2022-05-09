@@ -1,3 +1,6 @@
+package creatures;
+
+import creatures.Animal;
 import devices.Car;
 
 import java.time.LocalDateTime;
@@ -13,7 +16,7 @@ public class Human {
     private Double previousSalaryValue;
     public Double cash;
 
-    Human(String firstName, String lastName, Double salary, Double cash) {
+    public Human(String firstName, String lastName, Double salary, Double cash) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.salary = salary;
@@ -71,7 +74,7 @@ public class Human {
 
     @Override
     public String toString() {
-        return "Human{" +
+        return "creatures.Human{" +
                 "pet=" + pet +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +

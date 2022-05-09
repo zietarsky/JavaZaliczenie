@@ -1,4 +1,6 @@
-public class Animal implements Sellable {
+package creatures;
+
+public abstract class Animal implements Sellable, Feedable {
     final String species;
     private Double weight;
     Boolean isAlive = true;
@@ -50,7 +52,7 @@ public class Animal implements Sellable {
 
     @Override
     public String toString() {
-        return "Animal{" +
+        return "creatures.Animal{" +
                 "species='" + species + '\'' +
                 ", weight=" + weight +
                 ", isAlive=" + isAlive +
