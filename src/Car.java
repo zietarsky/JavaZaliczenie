@@ -2,6 +2,8 @@ public class Car {
     private String model;
     private String producer;
     private String colour;
+
+
     public Car(String model, String producer, String colour) {
         this.model = model;
         this.producer = producer;

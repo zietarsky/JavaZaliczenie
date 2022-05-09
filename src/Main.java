@@ -12,8 +12,8 @@ public class Main {
         dog.takeForAWalk();
         dog.takeForAWalk();
         System.out.println("zwierzę waży " + dog.getWeight());
-        Human me = new Human("Maciej", "Ziętarski");
-        Human adam = new Human("Adam", "Borsuk");
+        Human me = new Human("Maciej", "Ziętarski", 4000.0);
+        Human adam = new Human("Adam", "Borsuk", 9000.0);
         Car Honda = new Car("civic", "Honda", "red");
         Car Megane = new Car("megane", "Renault", "blue");
         System.out.println(Honda);
