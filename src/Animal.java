@@ -1,4 +1,4 @@
-public class Animal {
+public class Animal implements Sellable {
     final String species;
     private Double weight;
     Boolean isAlive = true;
@@ -55,5 +55,21 @@ public class Animal {
                 ", weight=" + weight +
                 ", isAlive=" + isAlive +
                 '}';
+    }
+
+    @Override
+    public void sell(Human seller, Human buyer, Double price) throws Exception {
+        if(seller.pet != this) throw new Exception("Seller isn't owner of the subject of the transaction");
+        if(buyer.cash > price) {
+            seller.cash += price;
+            buyer.cash -= price;
+            seller.pet = null;
+            buyer.pet = this;
+
+            System.out.println(buyer.pet.toString() + " has been sold to " + buyer.toString() + " from "+seller.toString() + " for " + price.toString());
+        }
+        else{
+            System.out.println("no cash");
+        }
     }
 }

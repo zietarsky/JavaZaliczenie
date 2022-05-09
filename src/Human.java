@@ -11,11 +11,13 @@ public class Human {
     private Double salary;
     private LocalDateTime lastCheck;
     private Double previousSalaryValue;
+    public Double cash;
 
-    Human(String firstName, String lastName, double salary) {
+    Human(String firstName, String lastName, Double salary, Double cash) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.salary = salary;
+        this.cash = cash;
     }
 
 
@@ -58,6 +60,14 @@ public class Human {
                 System.out.println("You need a raise! Go get some knowledge or something");
             }
         }
+
+    public void setPet(Animal pet) {
+        this.pet = pet;
+    }
+
+    public void setCash(Double cash) {
+        this.cash = cash;
+    }
 
     @Override
     public String toString() {

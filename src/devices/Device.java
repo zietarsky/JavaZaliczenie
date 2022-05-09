@@ -1,5 +1,7 @@
 package devices;
 
+
+
 public abstract class Device {
      String model;
      String producer;
