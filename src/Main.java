@@ -14,11 +14,14 @@ public class Main {
         System.out.println("zwierzę waży " + dog.getWeight());
         Human me = new Human("Maciej", "Ziętarski", 4000.0);
         Human adam = new Human("Adam", "Borsuk", 9000.0);
-        Car Honda = new Car("civic", "Honda", "red");
-        Car Megane = new Car("megane", "Renault", "blue");
+        Car Honda = new Car("civic", "Honda", "red", 6000.0);
+        Car Megane = new Car("megane", "Renault", "blue", 8000.0);
         System.out.println(Honda);
         me.setCar(Megane);
         adam.setCar(Honda);
+        me.getSalary();
+
+        me.getSalary();
         System.out.println(Megane);
         System.out.println(me);
         System.out.println(adam);
