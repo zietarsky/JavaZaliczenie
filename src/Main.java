@@ -33,6 +33,7 @@ public class Main {
         Car Golf2 = new Car("golf", "VW", "yellow", 6000.0);
         System.out.println(Golf.equals(Golf));
         System.out.println(Golf.equals(Golf2));
+        Golf.turnOn();
 
     }
 }

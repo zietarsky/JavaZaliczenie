@@ -1,8 +1,6 @@
 package devices;
 
-public class Car {
-    private String model;
-    private String producer;
+public class Car extends Device{
     private String colour;
     private Double value;
 
@@ -16,6 +14,14 @@ public class Car {
 
     public Double getValue() {
         return value;
+    }
+
+
+
+
+    @Override
+    public void turnOn() {
+
     }
 
     @Override
