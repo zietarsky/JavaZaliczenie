@@ -2,6 +2,7 @@ import creatures.Animal;
 import creatures.Human;
 import creatures.Pet;
 import devices.Car;
+import devices.Phone;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -39,5 +40,13 @@ public class Main {
         Golf.turnOn();
         me.setPet(dog);
         dog.sell(me, adam, 30.0);
+
+        Phone Nokia = new Phone("3310", "nokia", 2002);
+        Nokia.installAnApp("instagram");
+        Nokia.installAnApp("instagram", 3.2);
+        Nokia.installAnApp("instagram", 3.2, "192.120.22.40");
+
+        Golf.refuel();
+
     }
 }

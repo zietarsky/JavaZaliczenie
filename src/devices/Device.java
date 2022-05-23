@@ -7,6 +7,9 @@ public abstract class Device {
      String producer;
      Integer yearOfProduction;
 
+    public Device() {
+    }
+
     public abstract void turnOn();
 
     @Override

@@ -6,6 +6,7 @@ public class Car extends Device{
 
 
     public Car(String model, String producer, String colour, Double value) {
+        super();
         this.model = model;
         this.producer = producer;
         this.colour = colour;
@@ -16,7 +17,7 @@ public class Car extends Device{
         return value;
     }
 
-
+    public void refuel() {}
 
 
     @Override
